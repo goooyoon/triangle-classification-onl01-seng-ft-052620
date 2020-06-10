@@ -1,11 +1,12 @@
   class Triangle
   
-  attr_accessor :x, :y, :z
+  attr_accessor :side1, :side2, :side3, :allsides
 
-  def initialize(x, y, z)
-    @x = x
-    @y = y
-    @z = z
+  def initialize(side1, side2, side3)
+    @allsides = []
+    @side1 = side1
+    @side2 = side2
+    @side3 = side3
   end
   
     class TriangleError < StandardError
